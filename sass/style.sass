@@ -8,6 +8,10 @@ html
 body
     font-size: 1.6rem
     height: 100vh
+    background-color: $black
+    color: $white
+
+// START PAGE (index.html)
 
 .hero__image
     display: flex
@@ -35,6 +39,9 @@ body
     font-weight: 400
     margin-top: 30px
 
+.hero__text-link
+    text-decoration: none
+
 .hero__text-button
     display: block
     margin: 40px auto 0 auto
@@ -52,13 +59,38 @@ body
     color: $black
     background-color: rgba(255,255,255,1)
 
+// MAIN PAGE (main.html)
+.navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 20px
+
+.navbar__title
+    text-transform: uppercase
+    
+.navbar ul
+    list-style-type: none
+    background-color: grey
+    display: flex
+    justify-content: flex-end
+
+.navbar a
+    color: $white
+    text-decoration: none
+    padding: 15px
+    display: block
+    text-align: center
+
 @media (max-width: 1920px)
+// START PAGE (index.html)
     .hero__image
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero/hero_big (1920x1280).jpg")
 
 @media (max-width: 1400px) 
     
 @media (max-width: 1200px)
+// START PAGE (index.html)
     .hero__image
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero/hero_medium (1280x853).jpg")
     
@@ -76,6 +108,7 @@ body
 
 
 @media (max-width: 768px)
+// START PAGE (index.html)
     .hero__text-title
         font-size: 3rem
 
@@ -87,6 +120,7 @@ body
         font-size: 1.4rem
 
 @media (max-width: 576px)
+// START PAGE (index.html)
     .hero__image
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero/hero_small (640x427).jpg")
     
@@ -97,6 +131,7 @@ body
         font-size: 1.4rem
     
 @media (max-width: 375px)
+// START PAGE (index.html)
     .hero__text-title
         font-size: 2rem
 
